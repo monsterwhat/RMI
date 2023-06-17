@@ -152,3 +152,16 @@ nbdist/
 
 # End of https://www.toptal.com/developers/gitignore/api/netbeans,java,intellij
 ClientRMI/nbproject/project.properties
+ClientRMI/build.xml
+ClientRMI/lib/nblibraries.properties
+ClientRMI/manifest.mf
+ClientRMI/nbproject/build-impl.xml
+ClientRMI/nbproject/genfiles.properties
+ClientRMI/nbproject/project.xml
+ServerRMI/build.xml
+ServerRMI/lib/nblibraries.properties
+ServerRMI/manifest.mf
+ServerRMI/nbproject/build-impl.xml
+ServerRMI/nbproject/genfiles.properties
+ServerRMI/nbproject/project.properties
+ServerRMI/nbproject/project.xml
