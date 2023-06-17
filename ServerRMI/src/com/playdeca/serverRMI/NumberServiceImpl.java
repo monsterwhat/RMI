@@ -10,16 +10,19 @@ public class NumberServiceImpl extends UnicastRemoteObject implements NumberServ
 
     public NumberServiceImpl() throws RemoteException {
         super();
-        sum = BigDecimal.ZERO; // Initialize the sum to zero
+        sum = BigDecimal.ZERO; // Initialize to zero
     }
 
+    /**
+     *
+     * @param pi
+     * @throws RemoteException
+     */
     @Override
     public void sendPI(BigDecimal pi) throws RemoteException {
         System.out.println("Received PI: " + pi.toString());
-        // Perform any processing with the received PI if needed
-        // For now, we'll just update the sum with a placeholder value
-        BigDecimal value = pi; // Extract a placeholder value
-        sum = sum.add(value); // Update the sum by adding the value
+        BigDecimal value = pi; 
+        sum = sum.add(value);
         valueCount++;
     }
 

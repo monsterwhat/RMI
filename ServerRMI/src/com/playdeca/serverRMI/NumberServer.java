@@ -8,6 +8,7 @@ import java.rmi.registry.Registry;
 public class NumberServer {
     public static void main(String[] args) {
         try {
+            //Crear el servicio en puerto 1099
             NumberService numberService = new NumberServiceImpl();
             Registry registry = LocateRegistry.createRegistry(1099);
             registry.rebind("NumberService", numberService);
@@ -19,7 +20,7 @@ public class NumberServer {
                 System.out.println("Sum: " + sum);
                 System.out.println("Value Count: " + valueCount);
                 
-                Thread.sleep(1000); // Sleep for 1 second before updating the values again
+                Thread.sleep(1000);
             }
         } catch (InterruptedException | RemoteException e) {
             System.out.println("Error: " + e);
