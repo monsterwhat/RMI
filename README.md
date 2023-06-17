@@ -6,4 +6,4 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-This project demonstrates how to use Java RMI (Remote Method Invocation) to distribute the computation of summing the digits of Pi. It allows multiple clients to send individual digits of Pi to a server, which performs the summation and returns the final result.
+This project demonstrates how to use Java RMI (Remote Method Invocation) to distribute the computation of summing the digits of Pi. It allows multiple clients to send digits of Pi to a server, which performs the summation and returns the final result.
